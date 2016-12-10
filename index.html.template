@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<title>DNS Lookup</title>
+</head>
+<body>
+<form action="/" method="get">
+<p>
+DNS Name
+<input type="text" name="name" value="{{ .Name }}">
+</p>
+<p>
+DNS Server
+<input type="text" name="server" value="{{ .Server }}">
+</p>
+<input type="submit">
+</form>
+<pre>
+{{ .Body }}
+</pre>
+</body>
+</html>
